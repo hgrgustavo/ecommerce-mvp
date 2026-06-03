@@ -1,10 +1,12 @@
-package com.ecommerce.sales.domain;
+package com.ecommerce.sales.domain.product.valueobject;
 
 import java.util.List;
 import java.util.Objects;
 
-record Sku(String code, ProductId id) {
-	Sku {
+import com.ecommerce.sales.domain.Product;
+
+public record Sku(String code, ProductId id) {
+	public Sku {
 		Objects.requireNonNull(code, "The SKU code cannot be null.");
         Objects.requireNonNull(id, "The SKU must be linked to a valid product ID.");
         
