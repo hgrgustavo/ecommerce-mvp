@@ -1,4 +1,4 @@
-package com.ecommerce.sales.domain.product.valueobject;
+package com.ecommerce.sales.purchase.domain.product;
 
 import static java.math.BigDecimal.ZERO;
 import static java.math.RoundingMode.HALF_EVEN;
@@ -6,8 +6,8 @@ import static java.util.Objects.requireNonNull;
 
 import java.math.BigDecimal;
 
-public record Price(BigDecimal value) {
-	public Price {
+record Price(BigDecimal value) {
+	Price {
 		requireNonNull(value, "The price value cannot be zero.");
 		if (value.compareTo(ZERO) < 0)
 			throw new IllegalArgumentException("The price cannot be negative.");

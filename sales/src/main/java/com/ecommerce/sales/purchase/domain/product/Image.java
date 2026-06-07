@@ -1,7 +1,7 @@
-package com.ecommerce.sales.domain.product.valueobject;
+package com.ecommerce.sales.purchase.domain.product;
 
-public record Image(String url, String altText, Integer displayOrder) {
-	    public Image {
+record Image(String url, String altText, Integer displayOrder) {
+	    Image {
 	        if (url == null || url.isBlank())
 	            throw new IllegalArgumentException("The image URL cannot be empty.");
 	     
