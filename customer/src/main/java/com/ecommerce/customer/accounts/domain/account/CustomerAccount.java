@@ -4,8 +4,8 @@ import static com.ecommerce.customer.accounts.domain.account.RoleType.CUSTOMER;
 
 import java.util.UUID;
 
-final class CustomerAccount extends Account {	
-	CustomerAccount(UUID uuid, LoginCredentials credentials) {
-		super(uuid, Roles.define(CUSTOMER), credentials);
+public final class CustomerAccount extends Account {	
+	public CustomerAccount(UUID uuid, Name name, LoginCredentials credentials) {
+		super(uuid, name, Roles.define(CUSTOMER), credentials);
 	}
 }
