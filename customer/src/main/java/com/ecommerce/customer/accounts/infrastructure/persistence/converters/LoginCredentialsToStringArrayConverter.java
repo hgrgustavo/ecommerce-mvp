@@ -5,7 +5,9 @@ import java.util.function.Function;
 import com.ecommerce.customer.accounts.infrastructure.persistence.valueobjects.LoginCredentials;
 
 import jakarta.persistence.AttributeConverter;
+import jakarta.persistence.Converter;
 
+@Converter(autoApply=true)
 public final class LoginCredentialsToStringArrayConverter implements AttributeConverter<LoginCredentials, String[]> {
 	@Override
 	public String[] convertToDatabaseColumn(LoginCredentials credentials) {
