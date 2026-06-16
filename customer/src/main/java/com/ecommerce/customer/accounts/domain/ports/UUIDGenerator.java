@@ -1,4 +1,4 @@
-package com.ecommerce.customer.accounts.domain.account.ports;
+package com.ecommerce.customer.accounts.domain.ports;
 
 import java.util.UUID;
 import java.util.function.Supplier;

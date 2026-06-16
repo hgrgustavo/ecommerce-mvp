@@ -1,4 +1,4 @@
-package com.ecommerce.customer.accounts.domain.account;
+package com.ecommerce.customer.accounts.domain;
 
 record Roles(RoleType type) {
 	static Roles define(RoleType type) {

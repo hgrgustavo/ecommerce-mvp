@@ -1,8 +1,8 @@
-package com.ecommerce.customer.accounts.domain.account;
+package com.ecommerce.customer.accounts.domain;
 
 import java.util.UUID;
 
-abstract sealed class Account permits CustomerAccount {
+public abstract sealed class Account permits CustomerAccount {
 	private final UUID uuid;
 	private Roles role;
 	private Name name;

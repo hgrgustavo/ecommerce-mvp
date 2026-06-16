@@ -1,6 +1,6 @@
-package com.ecommerce.customer.accounts.domain.account;
+package com.ecommerce.customer.accounts.domain;
 
-import static com.ecommerce.customer.accounts.domain.account.RoleType.CUSTOMER;
+import static com.ecommerce.customer.accounts.domain.RoleType.CUSTOMER;
 
 import java.util.UUID;
 
