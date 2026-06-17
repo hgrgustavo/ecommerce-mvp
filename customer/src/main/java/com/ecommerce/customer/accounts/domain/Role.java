@@ -1,7 +1,7 @@
 package com.ecommerce.customer.accounts.domain;
 
-record Roles(RoleType type) {
-	static Roles define(RoleType type) {
-		return new Roles(type);
+public record Role(RoleType type) {
+	public static Role define(RoleType type) {
+		return new Role(type);
 	}
 }

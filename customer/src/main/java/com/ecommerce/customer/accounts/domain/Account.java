@@ -4,11 +4,11 @@ import java.util.UUID;
 
 public abstract sealed class Account permits CustomerAccount {
 	private final UUID uuid;
-	private Roles role;
+	private Role role;
 	private Name name;
 	private LoginCredentials credentials;
 	
-	Account(UUID uuid, Name name, Roles role, LoginCredentials credentials) {
+	Account(UUID uuid, Name name, Role role, LoginCredentials credentials) {
 		if (uuid == null) throw new IllegalArgumentException("Account identity is required.");
 		if (name == null) throw new IllegalArgumentException("Account name is required.");
         if (role == null) throw new IllegalArgumentException("The account needs an access rule (Role).");
@@ -24,7 +24,7 @@ public abstract sealed class Account permits CustomerAccount {
 		return name;
 	}
 
-	Roles getRole() {
+	public Role getRole() {
 		return role;
 	}
 

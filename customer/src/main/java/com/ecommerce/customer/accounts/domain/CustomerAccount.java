@@ -6,6 +6,6 @@ import java.util.UUID;
 
 public final class CustomerAccount extends Account {	
 	public CustomerAccount(UUID uuid, Name name, LoginCredentials credentials) {
-		super(uuid, name, Roles.define(CUSTOMER), credentials);
+		super(uuid, name, Role.define(CUSTOMER), credentials);
 	}
 }

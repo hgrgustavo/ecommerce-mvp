@@ -5,7 +5,7 @@ import java.util.UUID;
 
 import com.ecommerce.customer.accounts.domain.Account;
 
-public interface AccountRepository {
-	Optional<Account> findById(UUID uuid);
-	void save(Account account);
+public interface AccountRepository<T extends Account> {
+	Optional<T> findById(UUID uuid);
+	void save(T account);
 }
