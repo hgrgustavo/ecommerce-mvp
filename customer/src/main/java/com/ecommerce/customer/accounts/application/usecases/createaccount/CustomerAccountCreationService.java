@@ -10,7 +10,6 @@ import com.ecommerce.customer.accounts.domain.Name;
 import com.ecommerce.customer.accounts.domain.ports.AccountFactory;
 import com.ecommerce.customer.accounts.domain.ports.AccountRepository;
 import com.ecommerce.customer.accounts.domain.ports.UUIDGenerator;
-import com.ecommerce.customer.accounts.infrastructure.dtos.CustomerInputDTO;
 
 import lombok.RequiredArgsConstructor;
 import lombok.experimental.FieldDefaults;
