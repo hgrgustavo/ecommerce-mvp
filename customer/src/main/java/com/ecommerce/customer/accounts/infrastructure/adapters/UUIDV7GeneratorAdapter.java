@@ -8,7 +8,7 @@ import com.ecommerce.customer.accounts.domain.ports.UUIDGenerator;
 
 public final class UUIDV7GeneratorAdapter implements UUIDGenerator {
 	@Override
-	public UUID get() {
+	public UUID getV7() {
 		return timeBasedEpochGenerator().generate();
 	}
 }
