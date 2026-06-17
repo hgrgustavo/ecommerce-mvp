@@ -2,7 +2,7 @@ package com.ecommerce.customer.accounts.infrastructure.persistence.jpa.converter
 
 import java.util.function.Function;
 
-import com.ecommerce.customer.accounts.infrastructure.persistence.valueobjects.Name;
+import com.ecommerce.customer.accounts.domain.Name;
 
 import jakarta.persistence.AttributeConverter;
 import jakarta.persistence.Converter;

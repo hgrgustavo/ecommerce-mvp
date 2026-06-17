@@ -2,8 +2,8 @@ package com.ecommerce.customer.accounts.infrastructure.persistence.jpa.converter
 
 import java.util.function.Function;
 
-import com.ecommerce.customer.accounts.infrastructure.persistence.valueobjects.Role;
-import com.ecommerce.customer.accounts.infrastructure.persistence.valueobjects.RoleType;
+import com.ecommerce.customer.accounts.domain.Role;
+import com.ecommerce.customer.accounts.domain.RoleType;
 
 import jakarta.persistence.AttributeConverter;
 import jakarta.persistence.Converter;

@@ -10,7 +10,7 @@ import java.util.UUID;
 
 import org.hibernate.annotations.JdbcTypeCode;
 
-import com.ecommerce.customer.accounts.infrastructure.persistence.valueobjects.OutboxStatus;
+import com.ecommerce.customer.accounts.infrastructure.persistence.jpa.valueobjects.OutboxStatus;
 
 import jakarta.persistence.Column;
 import jakarta.persistence.Entity;
@@ -19,11 +19,13 @@ import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.Id;
 import jakarta.persistence.Index;
 import jakarta.persistence.Table;
+import lombok.AccessLevel;
 import lombok.AllArgsConstructor;
 import lombok.Builder;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.Setter;
+import lombok.experimental.FieldDefaults;
 
 @Entity
 @Table(
@@ -34,32 +36,33 @@ import lombok.Setter;
 )
 @Getter
 @Setter
-@NoArgsConstructor(access = PROTECTED)
+@FieldDefaults(level = AccessLevel.PRIVATE)
 @AllArgsConstructor
+@NoArgsConstructor(access = PROTECTED)
 @Builder
 public final class OutboxEvent {
 	@Id
 	@GeneratedValue(strategy = UUID)
-	private UUID id;
+	UUID id;
 
 	@Column(nullable = false)
-	private String aggregateType;
+	String aggregateType;
 
 	@Column(nullable = false)
-	private String aggregateId;
+	String aggregateId;
 
 	@Column(nullable = false)
-	private String eventType;
+	String eventType;
 
 	@JdbcTypeCode(JSON)
 	@Column(nullable = false)
-	private String payload;
+	String payload;
 
 	@Column(nullable = false)
-	private OffsetDateTime createdAt;
+	OffsetDateTime createdAt;
 
 	@Builder.Default
 	@Enumerated(STRING)
 	@Column(nullable = false)
-	private OutboxStatus status = OutboxStatus.PENDING;
+	OutboxStatus status = OutboxStatus.PENDING;
 }
