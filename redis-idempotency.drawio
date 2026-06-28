@@ -1,0 +1,102 @@
+<mxfile host="app.diagrams.net">
+  <diagram name="Page-1" id="VKuJYM9XutxwAdRszBCF">
+    <mxGraphModel dx="713" dy="408" grid="0" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1100" pageHeight="850" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="2wjDesX9ZJaqfv5KdTQh-10" parent="1" style="verticalLabelPosition=bottom;verticalAlign=top;html=1;shape=mxgraph.basic.polygon;polyCoords=[[0.25,0],[0.75,0],[1,0.25],[1,0.75],[0.75,1],[0.25,1],[0,0.75],[0,0.25]];polyline=0;strokeColor=light-dark(#000000,#006600);" value="&lt;div&gt;Spring&lt;/div&gt;&lt;div&gt;API&lt;/div&gt;" vertex="1">
+          <mxGeometry height="150" width="223" x="420" y="124" as="geometry" />
+        </mxCell>
+        <mxCell id="2wjDesX9ZJaqfv5KdTQh-3" parent="1" style="shape=message;html=1;html=1;outlineConnect=0;labelPosition=center;verticalLabelPosition=bottom;align=center;verticalAlign=top;" value="&lt;div&gt;JSON&lt;/div&gt;&lt;div&gt;Request&lt;/div&gt;" vertex="1">
+          <mxGeometry height="25" width="35" x="325" y="181.38" as="geometry" />
+        </mxCell>
+        <mxCell id="2wjDesX9ZJaqfv5KdTQh-12" edge="1" parent="1" source="2wjDesX9ZJaqfv5KdTQh-13" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;dashed=1;" target="2wjDesX9ZJaqfv5KdTQh-11">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="2wjDesX9ZJaqfv5KdTQh-2" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="Dispatcher" vertex="1">
+          <mxGeometry height="28.5" width="55" x="427" y="179.5" as="geometry" />
+        </mxCell>
+        <mxCell id="2wjDesX9ZJaqfv5KdTQh-4" edge="1" parent="1" source="2wjDesX9ZJaqfv5KdTQh-3" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" target="2wjDesX9ZJaqfv5KdTQh-2">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="2wjDesX9ZJaqfv5KdTQh-11" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="Controller" vertex="1">
+          <mxGeometry height="28.5" width="55" x="580" y="179.5" as="geometry" />
+        </mxCell>
+        <mxCell id="2wjDesX9ZJaqfv5KdTQh-14" edge="1" parent="1" source="2wjDesX9ZJaqfv5KdTQh-2" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;dashed=1;" target="2wjDesX9ZJaqfv5KdTQh-13" value="">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="482" y="194" as="sourcePoint" />
+            <mxPoint x="580" y="194" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="2wjDesX9ZJaqfv5KdTQh-13" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="I" vertex="1">
+          <mxGeometry height="28.25" width="28" x="514" y="179.75" as="geometry" />
+        </mxCell>
+        <mxCell id="2wjDesX9ZJaqfv5KdTQh-16" edge="1" parent="1" source="2wjDesX9ZJaqfv5KdTQh-15" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=1;entryDx=0;entryDy=0;" target="2wjDesX9ZJaqfv5KdTQh-13">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="2wjDesX9ZJaqfv5KdTQh-15" parent="1" style="shape=image;verticalLabelPosition=bottom;labelBackgroundColor=default;verticalAlign=top;aspect=fixed;imageAspect=0;image=https://spring.io/img/projects/spring-security.svg;" value="" vertex="1">
+          <mxGeometry height="33" width="23.62" x="548" y="224" as="geometry" />
+        </mxCell>
+        <mxCell id="2wjDesX9ZJaqfv5KdTQh-20" edge="1" parent="1" source="2wjDesX9ZJaqfv5KdTQh-17" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;startArrow=none;startFill=0;" value="">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="643" y="81.00000000000006" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="2wjDesX9ZJaqfv5KdTQh-17" parent="1" style="image;sketch=0;aspect=fixed;html=1;points=[];align=center;fontSize=12;image=img/lib/mscae/Cache_Redis_Product.svg;" value="" vertex="1">
+          <mxGeometry height="42" width="50" x="503" y="60" as="geometry" />
+        </mxCell>
+        <mxCell id="2wjDesX9ZJaqfv5KdTQh-18" edge="1" parent="1" source="2wjDesX9ZJaqfv5KdTQh-13" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=0;exitDx=0;exitDy=0;startArrow=classic;startFill=1;" target="2wjDesX9ZJaqfv5KdTQh-17">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="2wjDesX9ZJaqfv5KdTQh-22" parent="1" style="sketch=0;aspect=fixed;pointerEvents=1;shadow=0;dashed=0;html=1;strokeColor=none;labelPosition=center;verticalLabelPosition=bottom;verticalAlign=top;align=center;fillColor=light-dark(#00188D,#3333FF);shape=mxgraph.mscae.enterprise.database_generic" value="SQL" vertex="1">
+          <mxGeometry height="50" width="37" x="643" y="56" as="geometry" />
+        </mxCell>
+        <mxCell id="2wjDesX9ZJaqfv5KdTQh-25" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" value="get keys" vertex="1">
+          <mxGeometry height="14" width="45" x="573" y="63" as="geometry" />
+        </mxCell>
+        <mxCell id="2wjDesX9ZJaqfv5KdTQh-31" edge="1" parent="1" source="2wjDesX9ZJaqfv5KdTQh-26" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;endArrow=none;endFill=0;dashed=1;startArrow=block;startFill=0;" target="2wjDesX9ZJaqfv5KdTQh-27">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="2wjDesX9ZJaqfv5KdTQh-26" parent="1" style="html=1;whiteSpace=wrap;" value="&lt;div&gt;«interface»&lt;/div&gt;&lt;div&gt;&lt;b&gt;IdempotencyRepository&lt;/b&gt;&lt;/div&gt;" vertex="1">
+          <mxGeometry height="50" width="150" x="1451" y="257" as="geometry" />
+        </mxCell>
+        <mxCell id="2wjDesX9ZJaqfv5KdTQh-34" edge="1" parent="1" source="2wjDesX9ZJaqfv5KdTQh-27" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" target="2wjDesX9ZJaqfv5KdTQh-33">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="2wjDesX9ZJaqfv5KdTQh-27" parent="1" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;" value="RedisIdempotencyAdapter" vertex="1">
+          <mxGeometry height="86" width="160" x="1446" y="380" as="geometry" />
+        </mxCell>
+        <mxCell id="2wjDesX9ZJaqfv5KdTQh-28" parent="2wjDesX9ZJaqfv5KdTQh-27" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" value="+ field: type" vertex="1">
+          <mxGeometry height="26" width="160" y="26" as="geometry" />
+        </mxCell>
+        <mxCell id="2wjDesX9ZJaqfv5KdTQh-29" parent="2wjDesX9ZJaqfv5KdTQh-27" style="line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;strokeColor=inherit;" value="" vertex="1">
+          <mxGeometry height="8" width="160" y="52" as="geometry" />
+        </mxCell>
+        <mxCell id="2wjDesX9ZJaqfv5KdTQh-30" parent="2wjDesX9ZJaqfv5KdTQh-27" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" value="+ method(type): type" vertex="1">
+          <mxGeometry height="26" width="160" y="60" as="geometry" />
+        </mxCell>
+        <mxCell id="2wjDesX9ZJaqfv5KdTQh-35" edge="1" parent="1" source="2wjDesX9ZJaqfv5KdTQh-32" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" target="2wjDesX9ZJaqfv5KdTQh-33">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="2wjDesX9ZJaqfv5KdTQh-32" parent="1" style="html=1;whiteSpace=wrap;" value="RedisConfiguration" vertex="1">
+          <mxGeometry height="50" width="110" x="1731" y="380" as="geometry" />
+        </mxCell>
+        <mxCell id="2wjDesX9ZJaqfv5KdTQh-33" parent="1" style="shape=image;verticalLabelPosition=bottom;labelBackgroundColor=default;verticalAlign=top;aspect=fixed;imageAspect=0;image=https://docs.spring.io/spring-data/redis/reference/_/img/spring-logo.svg;" value="" vertex="1">
+          <mxGeometry height="47.62" width="185.53" x="1557" y="580" as="geometry" />
+        </mxCell>
+        <mxCell id="2wjDesX9ZJaqfv5KdTQh-37" edge="1" parent="1" source="2wjDesX9ZJaqfv5KdTQh-36" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;startArrow=none;startFill=0;endArrow=oval;endFill=0;dashed=1;">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="1878" y="355" />
+              <mxPoint x="1878" y="405" />
+            </Array>
+            <mxPoint x="1845" y="405" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="2wjDesX9ZJaqfv5KdTQh-36" parent="1" style="shape=note2;boundedLbl=1;whiteSpace=wrap;html=1;size=25;verticalAlign=middle;align=left;spacingBottom=0;fontSize=4;autosizeText=0;spacing=0;spacingLeft=5;" value="&lt;div style=&quot;line-height: 140%;&quot;&gt;&lt;div&gt;&lt;div align=&quot;left&quot;&gt;&lt;pre class=&quot;highlightjs highlight&quot;&gt;&lt;font&gt;&lt;code class=&quot;language-java hljs&quot; data-lang=&quot;java&quot;&gt;&lt;span class=&quot;hljs-meta&quot;&gt;  @Bean&lt;/span&gt;&lt;br&gt;  &lt;span class=&quot;hljs-function&quot;&gt;&lt;span class=&quot;hljs-keyword&quot;&gt;public&lt;/span&gt; StringRedisTemplate &lt;span class=&quot;hljs-title&quot;&gt;redisTemplate&lt;/span&gt;&lt;span class=&quot;hljs-params&quot;&gt;()&lt;/span&gt; &lt;/span&gt;{&lt;br&gt;    StringRedisTemplate template = &lt;span class=&quot;hljs-keyword&quot;&gt;&lt;br&gt;    new&lt;/span&gt; StringRedisTemplate(redisConnectionFactory());&lt;br&gt;    &lt;span class=&quot;hljs-comment&quot;&gt;// explicitly enable transaction support&lt;/span&gt;&lt;br&gt;    template.setEnableTransactionSupport(&lt;span class=&quot;hljs-keyword&quot;&gt;true&lt;/span&gt;);              &lt;br&gt;    &lt;span class=&quot;hljs-keyword&quot;&gt;return&lt;/span&gt; template;&lt;br&gt;  }&lt;/code&gt;&lt;/font&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;" vertex="1">
+          <mxGeometry height="52" width="167" x="1915" y="325" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
