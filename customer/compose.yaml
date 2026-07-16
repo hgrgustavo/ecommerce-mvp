@@ -1,0 +1,27 @@
+services:
+  postgres:
+    image: 'postgres:16'
+    container_name: dev-postgres
+    env_file: .env.d/postgres.env
+    ports:
+      - '5432:5432'
+    volumes:
+      - 'postgres_data:/var/lib/postgresql/data'
+  redis:
+    image: 'redis:8'
+    container_name: dev-redis
+    volumes:
+      - './.certs/:/certs/'
+    ports:
+      - '6379:6379'
+    secrets:
+      - redis-cert
+      - redis-csr
+volumes:
+  postgres_data:
+    name: customer-data
+secrets:
+  redis-cert:
+    file: .certs/dev-redis.crt
+  redis-csr:
+    file: .certs/dev-redis.csr

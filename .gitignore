@@ -168,3 +168,6 @@ buildNumber.properties
 .project
 # JDT-specific (Eclipse Java Development Tools)
 .classpath
+
+# SSL/TLS specific
+.certs

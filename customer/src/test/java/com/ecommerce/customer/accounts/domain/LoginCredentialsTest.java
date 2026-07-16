@@ -8,6 +8,8 @@ import org.junit.jupiter.params.ParameterizedTest;
 import org.junit.jupiter.params.provider.Arguments;
 import org.junit.jupiter.params.provider.MethodSource;
 
+import com.ecommerce.customer.accounts.domain.credentials.LoginCredentials;
+
 public final class LoginCredentialsTest {
 	@ParameterizedTest
     @MethodSource("parametersFactory")

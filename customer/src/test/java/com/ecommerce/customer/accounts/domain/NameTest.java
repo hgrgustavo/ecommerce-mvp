@@ -4,8 +4,8 @@ import static org.junit.jupiter.api.Assertions.assertThrowsExactly;
 
 import org.junit.jupiter.params.ParameterizedTest;
 import org.junit.jupiter.params.provider.ValueSource;
-importannotation.params.ParameterizedTest;
-importannotation.params.provider.ValueSource;
+
+import com.ecommerce.customer.accounts.domain.credentials.Name;
 
 class NameTest {
     @ParameterizedTest

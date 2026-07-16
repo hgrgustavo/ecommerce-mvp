@@ -1,0 +1,37 @@
+spring:
+  config:
+    import: 'optional:file:.env.d/spring.env[.properties]'
+  application:
+    name: customer
+  profiles:
+    active: dev
+  data:
+    redis:
+      client-name: '${REDIS_CLIENTNAME}'
+      host: '${REDIS_HOST}'
+      password: '${REDIS_PASSWORD}'
+      port: '${REDIS_PORT}'
+      username: '${REDIS_USERNAME}'
+      ssl:
+        enabled: true
+  datasource:
+    url: 'jdbc:postgresql://localhost:5432/${DATABASE_NAME}'
+    generate-unique-name: false
+    username: '${DATABASE_USERNAME}'
+    password: '${DATABASE_PASSWORD}'
+    hikari:
+      connection-timeout: '${DATABASE_POOL_TIMEOUT_MS}'
+      maximum-pool-size: '${DATABASE_POOL_MAX_SIZE}'
+      max-lifetime: '${DATABASE_POOL_MAX_LIFETIME_MS}'
+  jpa:
+    hibernate:
+      ddl-auto: update
+infra:
+  redis:
+    ssl:
+      cert-key: '${REDIS_CERTIFICATEKEY_PATH}'
+      key-password: '${REDIS_CERTIFICATEKEY_PASSWORD_PATH}'
+      cert-file: '${REDIS_CERTIFICATE_PATH}'
+crypto:
+  hash:
+    pepper: '${HASH_PEPPER}'
